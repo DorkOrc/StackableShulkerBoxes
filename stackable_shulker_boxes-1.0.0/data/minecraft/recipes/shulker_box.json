@@ -1,0 +1,35 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"pattern": [
+		"-",
+		"#",
+		"-"
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:chest"
+		},
+		"-": {
+			"item": "minecraft:shulker_shell"
+		}
+	},
+	"result": {
+		"id": "minecraft:shulker_box",
+		"count": 1,
+		"components": {
+			"minecraft:max_stack_size": 64
+		}
+	},
+	"__smithed__": {
+		"rules": [
+			{
+				"type":"replace",
+				"target":"result.components.\"minecraft:max_stack_size\"",
+				"source": {
+					"value": 64
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"criteria": {
+		"invalid_shulker_box_in_inventory": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#dorkorc.stackable_shulker_boxes:shulker_boxes",
+						"components": {
+							"minecraft:max_stack_size": 1
+						},
+						"predicates": {
+							"container": {
+								"items": {
+									"count": [
+										{
+											"test": {
+												"count": {
+													"min": 1
+												}
+											},
+											"count": 0
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"invalid_shulker_box_in_inventory"
+		]
+	],
+	"rewards": {
+		"function": "dorkorc.stackable_shulker_boxes:detect/invalid_shulker_box_in_inventory/main"
+	}
+}

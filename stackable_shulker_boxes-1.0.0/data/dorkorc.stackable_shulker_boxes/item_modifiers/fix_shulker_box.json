@@ -1,0 +1,28 @@
+{
+	"function": "minecraft:filtered",
+	"item_filter": {
+		"items": "#dorkorc.stackable_shulker_boxes:shulker_boxes",
+		"predicates": {
+			"minecraft:container": {
+				"items": {
+					"count": [
+						{
+							"test": {
+								"count": {
+									"min": 1
+								}
+							},
+							"count": 0
+						}
+					]
+				}
+			}
+		}
+	},
+	"modifier": {
+		"function": "minecraft:set_components",
+		"components": {
+			"minecraft:max_stack_size": 64
+		}
+	}
+}
