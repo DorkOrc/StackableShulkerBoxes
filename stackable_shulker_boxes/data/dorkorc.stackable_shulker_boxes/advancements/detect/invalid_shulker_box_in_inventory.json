@@ -12,16 +12,7 @@
 						"predicates": {
 							"container": {
 								"items": {
-									"count": [
-										{
-											"test": {
-												"count": {
-													"min": 1
-												}
-											},
-											"count": 0
-										}
-									]
+									"size": 0
 								}
 							}
 						}
