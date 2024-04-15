@@ -2,6 +2,10 @@
 	"id": "dorkorc.stackable_shulker_boxes",
 	"pack": {
 		"pack_format": 39,
+		"supported_formats": {
+			"min_inclusive": 39,
+			"max_inclusive": 40
+		},
 		"description": [
 			"Stackable Shulker Boxes\n",
 			{
