@@ -25,6 +25,43 @@
 						}
 					]
 				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:inverted",
+					"term": {
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"predicates": {
+								"minecraft:custom_data": {
+									"drop_contents": 1
+								}
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:dynamic",
+					"name": "minecraft:contents"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:match_tool",
+					"predicate": {
+						"predicates": {
+							"minecraft:custom_data": {
+								"drop_contents": 1
+							}
+						}
+					}
+				}
 			]
 		}
 	],
