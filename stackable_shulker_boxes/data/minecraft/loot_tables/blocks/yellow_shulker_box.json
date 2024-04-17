@@ -67,13 +67,32 @@
 	],
 	"random_sequence": "minecraft:blocks/yellow_shulker_box",
 	"__smithed__": {
+		"priority": {
+			"stage": "early"
+		},
 		"rules": [
 			{
-				"type":"append",
-				"target":"pools[0].entries[0].functions",
+				"type": "append",
+				"target": "pools[0].conditions",
 				"source": {
-					"type":"reference",
-					"path":"pools[0].entries[0].functions[1]"
+					"type": "reference",
+					"path": "pools[0].conditions[0]"
+				}
+			},
+			{
+				"type": "append",
+				"target": "pools",
+				"source": {
+					"type": "reference",
+					"path": "pools[1]"
+				}
+			},
+			{
+				"type": "append",
+				"target": "pools[0].functions",
+				"source": {
+					"type": "reference",
+					"path": "pools[0].functions[1]"
 				}
 			}
 		]
