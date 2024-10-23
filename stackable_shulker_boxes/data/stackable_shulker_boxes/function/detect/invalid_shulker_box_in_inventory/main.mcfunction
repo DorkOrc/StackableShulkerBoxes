@@ -1,0 +1,3 @@
+function stackable_shulker_boxes:update_inventory
+
+advancement revoke @s only stackable_shulker_boxes:detect/invalid_shulker_box_in_inventory

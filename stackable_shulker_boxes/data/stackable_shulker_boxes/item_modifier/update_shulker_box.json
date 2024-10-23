@@ -1,7 +1,7 @@
 {
 	"function": "minecraft:filtered",
 	"item_filter": {
-		"items": "#dorkorc.stackable_shulker_boxes:shulker_boxes",
+		"items": "#stackable_shulker_boxes:shulker_boxes",
 		"predicates": {
 			"minecraft:container": {
 				"items": {

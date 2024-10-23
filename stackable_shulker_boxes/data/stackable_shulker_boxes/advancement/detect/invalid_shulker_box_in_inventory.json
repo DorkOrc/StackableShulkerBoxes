@@ -5,7 +5,7 @@
 			"conditions": {
 				"items": [
 					{
-						"items": "#dorkorc.stackable_shulker_boxes:shulker_boxes",
+						"items": "#stackable_shulker_boxes:shulker_boxes",
 						"components": {
 							"minecraft:max_stack_size": 1
 						},
@@ -27,6 +27,6 @@
 		]
 	],
 	"rewards": {
-		"function": "dorkorc.stackable_shulker_boxes:detect/invalid_shulker_box_in_inventory/main"
+		"function": "stackable_shulker_boxes:detect/invalid_shulker_box_in_inventory/main"
 	}
 }

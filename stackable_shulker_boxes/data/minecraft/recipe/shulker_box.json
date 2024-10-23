@@ -24,8 +24,8 @@
 	"__smithed__": {
 		"rules": [
 			{
-				"type":"replace",
-				"target":"result.components.\"minecraft:max_stack_size\"",
+				"type": "replace",
+				"target": "result.components.\"minecraft:max_stack_size\"",
 				"source": {
 					"value": 64
 				}

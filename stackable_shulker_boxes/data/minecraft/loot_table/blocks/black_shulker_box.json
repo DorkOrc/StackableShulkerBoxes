@@ -21,7 +21,7 @@
 						},
 						{
 							"function": "minecraft:reference",
-							"name": "dorkorc.stackable_shulker_boxes:update_shulker_box"
+							"name": "stackable_shulker_boxes:update_shulker_box"
 						}
 					]
 				}
