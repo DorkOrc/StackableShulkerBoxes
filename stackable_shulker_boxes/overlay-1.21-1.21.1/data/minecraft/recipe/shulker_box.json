@@ -7,8 +7,12 @@
 		"-"
 	],
 	"key": {
-		"#": "minecraft:chest",
-		"-": "minecraft:shulker_shell"
+		"#": {
+			"item": "minecraft:chest"
+		},
+		"-": {
+			"item": "minecraft:shulker_shell"
+		}
 	},
 	"result": {
 		"id": "minecraft:shulker_box",
