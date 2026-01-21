@@ -4,8 +4,10 @@
 		"pack_format": 48,
 		"supported_formats": {
 			"min_inclusive": 48,
-			"max_inclusive": 71
+			"max_inclusive": 81
 		},
+		"min_format": 48,
+		"max_format": 94,
 		"description": [
 			"Stackable Shulker Boxes\n",
 			{
@@ -21,7 +23,23 @@
 					"min_inclusive": 48,
 					"max_inclusive": 48
 				},
-				"directory": "overlay-1.21-1.21.1"
+				"directory": "overlay-1_21_1"
+			},
+			{
+				"formats": {
+					"min_inclusive": 48,
+					"max_inclusive": 81
+				},
+				"directory": "overlay-1_21_10"
+			},
+			{
+				"formats": {
+					"min_inclusive": 82,
+					"max_inclusive": 88
+				},
+				"min_format": 82,
+				"max_format": 88,
+				"directory": "overlay-1_21_10"
 			}
 		]
 	}
