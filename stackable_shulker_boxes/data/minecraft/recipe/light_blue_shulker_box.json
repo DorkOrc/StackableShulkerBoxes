@@ -1,16 +1,10 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"key": {
-		"#": "minecraft:chest",
-		"-": "minecraft:shulker_shell"
-	},
-	"pattern": [
-		"-",
-		"#",
-		"-"
-	],
+	"type": "minecraft:crafting_transmute",
+	"group": "shulker_box_dye",
+	"input": "#minecraft:shulker_boxes",
+	"material": "minecraft:light_blue_dye",
 	"result": {
-		"id": "minecraft:shulker_box",
+		"id": "minecraft:light_blue_shulker_box",
 		"components": {
 			"minecraft:max_stack_size": 64
 		}

@@ -1,3 +1,4 @@
+advancement revoke @s only stackable_shulker_boxes:detect/invalid_shulker_box_in_inventory
 item modify entity @s hotbar.0 stackable_shulker_boxes:update_shulker_box
 item modify entity @s hotbar.1 stackable_shulker_boxes:update_shulker_box
 item modify entity @s hotbar.2 stackable_shulker_boxes:update_shulker_box
@@ -34,10 +35,16 @@ item modify entity @s inventory.23 stackable_shulker_boxes:update_shulker_box
 item modify entity @s inventory.24 stackable_shulker_boxes:update_shulker_box
 item modify entity @s inventory.25 stackable_shulker_boxes:update_shulker_box
 item modify entity @s inventory.26 stackable_shulker_boxes:update_shulker_box
-item modify entity @s weapon.offhand stackable_shulker_boxes:update_shulker_box
+item modify entity @s armor.feet stackable_shulker_boxes:update_shulker_box
+item modify entity @s armor.legs stackable_shulker_boxes:update_shulker_box
+item modify entity @s armor.chest stackable_shulker_boxes:update_shulker_box
 item modify entity @s armor.head stackable_shulker_boxes:update_shulker_box
+item modify entity @s armor.body stackable_shulker_boxes:update_shulker_box
+item modify entity @s weapon.offhand stackable_shulker_boxes:update_shulker_box
+item modify entity @s saddle stackable_shulker_boxes:update_shulker_box
 item modify entity @s player.cursor stackable_shulker_boxes:update_shulker_box
 item modify entity @s player.crafting.0 stackable_shulker_boxes:update_shulker_box
 item modify entity @s player.crafting.1 stackable_shulker_boxes:update_shulker_box
 item modify entity @s player.crafting.2 stackable_shulker_boxes:update_shulker_box
 item modify entity @s player.crafting.3 stackable_shulker_boxes:update_shulker_box
+execute if items entity @s enderchest.* #minecraft:shulker_boxes[container~{container:{items:{size:0}}}] run function stackable_shulker_boxes:update_enderchest
