@@ -1,12 +1,12 @@
 {
 	"id": "stackable_shulker_boxes",
 	"pack": {
-		"min_format": 101,
-		"max_format": 107,
+		"min_format": 121,
+		"max_format": 121,
 		"description": [
 			"Stackable Shulker Boxes\n",
 			{
-				"text": "by DorkOrc",
+				"text": "by Dork Orc",
 				"color": "dark_gray"
 			}
 		]

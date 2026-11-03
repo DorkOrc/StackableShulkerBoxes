@@ -1,0 +1,2 @@
+item modify entity @s stackable_shulker_boxes:update_targets stackable_shulker_boxes:update_shulker_box
+advancement revoke @s only stackable_shulker_boxes:detect/invalid_shulker_box_in_inventory

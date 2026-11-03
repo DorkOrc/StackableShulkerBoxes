@@ -8,9 +8,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:black_shulker_box",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:copy_components",
+							"type": "minecraft:copy_components",
 							"source": "block_entity",
 							"include": [
 								"minecraft:custom_name",
@@ -19,10 +19,7 @@
 								"minecraft:container_loot"
 							]
 						},
-						{
-							"function": "minecraft:reference",
-							"name": "stackable_shulker_boxes:update_shulker_box"
-						}
+						"stackable_shulker_boxes:update_shulker_box"
 					]
 				}
 			]
@@ -32,11 +29,11 @@
 	"__smithed__": {
 		"rules": [
 			{
-				"type":"append",
-				"target":"pools[0].entries[0].functions",
+				"type": "append",
+				"target": "pools[0].entries[0].modifier",
 				"source": {
-					"type":"reference",
-					"path":"pools[0].entries[0].functions[1]"
+					"type": "reference",
+					"path": "pools[0].entries[0].modifier[1]"
 				}
 			}
 		]

@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"invalid_shulker_box_in_inventory": {
+		"make_stackable": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
@@ -19,9 +19,37 @@
 					}
 				]
 			}
+		},
+		"make_non_stackable": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#minecraft:shulker_boxes",
+						"components": {
+							"minecraft:max_stack_size": 64
+						},
+						"predicates": {
+							"container": {
+								"items": {
+									"size": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
 		}
 	},
+	"requirements": [
+		[
+			"make_stackable",
+			"make_non_stackable"
+		]
+	],
 	"rewards": {
-		"function": "stackable_shulker_boxes:update_inventory"
+		"function": "stackable_shulker_boxes:update_player"
 	}
 }

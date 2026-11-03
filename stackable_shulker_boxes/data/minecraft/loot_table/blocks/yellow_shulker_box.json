@@ -8,9 +8,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:yellow_shulker_box",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:copy_components",
+							"type": "minecraft:copy_components",
 							"source": "block_entity",
 							"include": [
 								"minecraft:custom_name",
@@ -19,28 +19,28 @@
 								"minecraft:container_loot"
 							]
 						},
-						{
-							"function": "minecraft:reference",
-							"name": "stackable_shulker_boxes:update_shulker_box"
-						}
+						"stackable_shulker_boxes:update_shulker_box"
 					]
 				}
 			],
-			"conditions": [
-				{
-					"condition": "minecraft:inverted",
-					"term": {
-						"condition": "minecraft:match_tool",
-						"predicate": {
-							"predicates": {
-								"minecraft:custom_data": {
-									"drop_contents": 1
+			"condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:inverted",
+						"term": {
+							"type": "minecraft:match_tool",
+							"predicate": {
+								"predicates": {
+									"minecraft:custom_data": {
+										"drop_contents": true
+									}
 								}
 							}
 						}
 					}
-				}
-			]
+				]
+			}
 		},
 		{
 			"rolls": 1,
@@ -51,18 +51,16 @@
 					"name": "minecraft:contents"
 				}
 			],
-			"conditions": [
-				{
-					"condition": "minecraft:match_tool",
-					"predicate": {
-						"predicates": {
-							"minecraft:custom_data": {
-								"drop_contents": 1
-							}
+			"condition": {
+				"type": "minecraft:match_tool",
+				"predicate": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"drop_contents": 1
 						}
 					}
 				}
-			]
+			}
 		}
 	],
 	"random_sequence": "minecraft:blocks/yellow_shulker_box",
@@ -73,10 +71,10 @@
 		"rules": [
 			{
 				"type": "append",
-				"target": "pools[0].conditions",
+				"target": "pools[0].condition.terms",
 				"source": {
 					"type": "reference",
-					"path": "pools[0].conditions[0]"
+					"path": "pools[0].condition[0].terms"
 				}
 			},
 			{
@@ -89,10 +87,10 @@
 			},
 			{
 				"type": "append",
-				"target": "pools[0].functions",
+				"target": "pools[0].modifier",
 				"source": {
 					"type": "reference",
-					"path": "pools[0].functions[1]"
+					"path": "pools[0].modifier[1]"
 				}
 			}
 		]

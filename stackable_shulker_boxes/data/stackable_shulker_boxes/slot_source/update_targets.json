@@ -1,0 +1,44 @@
+{
+	"type": "minecraft:group",
+	"terms": [
+		"stackable_shulker_boxes:inventory_and_enderchest",
+		{
+			"type": "minecraft:contents",
+			"slot_source": {
+				"type": "minecraft:filtered",
+				"slot_source": "stackable_shulker_boxes:inventory_and_enderchest",
+				"item_filter": {
+					"predicates": {
+						"minecraft:container": {
+							"items": {
+								"size": {
+									"min": 1
+								}
+							}
+						}
+					}
+				}
+			},
+			"component": "minecraft:container"
+		},
+		{
+			"type": "minecraft:contents",
+			"slot_source": {
+				"type": "minecraft:filtered",
+				"slot_source": "stackable_shulker_boxes:inventory_and_enderchest",
+				"item_filter": {
+					"predicates": {
+						"minecraft:bundle_contents": {
+							"items": {
+								"size": {
+									"min": 1
+								}
+							}
+						}
+					}
+				}
+			},
+			"component": "minecraft:bundle_contents"
+		}
+	]
+}
